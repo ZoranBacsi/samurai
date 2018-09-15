@@ -1,71 +1,89 @@
 <!DOCTYPE HTML>
 <html lang="hu">
+
 <head>
-    <!-- Weboldal adatai -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="ELTE Webfejlesztés - Házifeladat">
-    <meta name="author" content="Heinczinger Zorán - GWCKYP">
-    <link rel="icon" href="assets/favicon.ico">
+	<!-- Weboldal adatai -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="ELTE Webfejlesztés - Házifeladat">
+	<meta name="author" content="Heinczinger Zorán - GWCKYP">
+	<link rel="icon" href="assets/favicon.ico">
 
-    <title>Szamurájok - A kelet bátor harcosai</title>
+	<title>Főoldal Szamurájok - A kelet bátor harcosai</title>
 
-    <!-- Stílus lapok -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Stílus lapok -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/app.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
-    <header>
-        <div id="header_slider" class="carousel slide row" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#header_slider" data-slide-to="0" class="active"></li>
-                <li data-target="#header_slider" data-slide-to="1"></li>
-                <li data-target="#header_slider" data-slide-to="2"></li>
-                <li data-target="#header_slider" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="assets/slider/slide1.png" alt="Slider image 1" style="width:100%; height:auto;">
-                </div>
-                <div class="item">
-                    <img src="assets/slider/slide2.jpg" alt="Slider image 2" style="width:100%; height:auto;">
-                </div>
-                <div class="item">
-                    <img src="assets/slider/slide3.jpg" alt="Slider image 3" style="width:100%; height:auto;">
-                </div>
-                <div class="item">
-                    <img src="assets/slider/slide4.jpg" alt="Slider image 4" style="width:100%; height:auto;">
-                </div>
-            </div>
-        </div>
-        <div class="row navigation">
-            <nav class="navbar navbar-inverse container">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <p class="brand navbar-toggle">Szamurájok - A kelet bátor harcosai</p>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
-                            <li><a href="history.html">Egy csipetnyi történelem</a></li>
-                            <li><a href="weapons.html">Fegyverek</a></li>
-                            <li><a href="movies.html">Mozi &amp; Szamurájok</a></li>
-                            <li><a href="bujutsu.html">Legyél te is szamuráj</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+	<header>
+		<div id="header_slider" class="carousel slide row" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#header_slider" data-slide-to="0" class="active"></li>
+				<li data-target="#header_slider" data-slide-to="1"></li>
+				<li data-target="#header_slider" data-slide-to="2"></li>
+				<li data-target="#header_slider" data-slide-to="3"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="assets/slider/slide1.png" alt="Slider image 1" style="width:100%; height:auto;" />
+				</div>
+				<div class="item">
+					<img src="assets/slider/slide2.jpg" alt="Slider image 2" style="width:100%; height:auto;" />
+				</div>
+				<div class="item">
+					<img src="assets/slider/slide3.jpg" alt="Slider image 3" style="width:100%; height:auto;" />
+				</div>
+				<div class="item">
+					<img src="assets/slider/slide4.jpg" alt="Slider image 4" style="width:100%; height:auto;" />
+				</div>
+			</div>
+		</div>
+		<div class="row navigation">
+			<nav class="navbar navbar-inverse container">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="brand navbar-toggle" href="#">Szamurájok - A kelet bátor harcosai</a>
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#samuraiNav">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div class="collapse navbar-collapse" id="samuraiNav">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
+							<li><a href="history.html">Egy csipetnyi történelem</a></li>
+							<li><a href="weapons.html">Fegyverek</a></li>
+							<li><a href="movies.html">Mozi &amp; Szamurájok</a></li>
+							<li><a href="bujutsu.html">Legyél te is szamuráj</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<h1>Szamuráj: a japán harcos világszerte legelterjedtebb mítosza.</h1>
+
+		<aside class="aside_image">
+			<a href="assets/images/m_samurai_1.jpg" target="_blank">
+				<img src="assets/images/m_samurai_1.jpg" alt="samurai picture" />
+			</a>
+		</aside>
+		<article class="aside_text">
+			<p>Japánban élő legenda: minden japán kisfiú fakarddal szamurájt játszva nő fel. Japán filmek, tévésorozatok tömege készül a szamurájokról; a japán középkor szinte kimeríthetetlen tárházát nyújtja az ilyen történeteknek. Félelmet nem ismerő, könyörtelen, de önfeláldozó harcos, a becsület és hűség megtestesítője, a kemény, egyenes, férfias viselkedés mintája, aki a szégyen helyett mindig inkább a halált választja.
+				Ilyen volt-e valójában a szamurájő Nem is ez a lényeg ma már, hanem az, hogy ennek a képnek a hagyománya lett egy nemzet kulturális örökségének alapja, amely máig hatóan él a japán szellemiségben.
+				A valós szamurájok eltűntek. A 19. századi japán modernizáció nemcsak rétegüket, hanem azt a világot is megszüntette, amelyben létezhettek. [...]</p>
+			<p>A történet látszólag egyszerű: hagyomány és modernitás küzdelmében a modernitás győzött. Ez azonban a valóságnak csak egy része, amit a nyugatiak észrevettek Japánban és a szamurájvilág eltűnésében. A nyugati világban ugyanis egy változás elsöpri a régit, az új világ megszünteti a régi világot. Keleten a változások másként zajlanak le. [...] Japánban az új, modern felszín alatt mindig ottmarad a mélyben a régi: tradíció, szellemiség, szokások, filozófia, közösség. A szamurájok letűnhettek személyükben és rétegükben, de ami mozgatta őket, az tovább élt és hatott.</p>
+		</article>
+
+	</main>
 </body>
+
 </html>
