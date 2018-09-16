@@ -1,8 +1,9 @@
 body {
 	font-size: 1.25vw;
+	background-color: #fff8e7;
 }
 
-h1{
+h1 {
 	padding-left: 10px;
 }
 
@@ -18,14 +19,17 @@ figcaption {
 	color: #333;
 }
 
-.navbar-inverse .navbar-nav>li>a.active{
+.navbar-inverse .navbar-nav > li > a.active {
 	color: #333;
-    background-color: darkorange;
+	background-color: #fff8e7;
+	border-radius: 10px 10px 0 0;
 }
 
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > a:hover {
 	color: #333;
-    background-color: darkorange;
+	background-color: #fff8e7;
+	border-radius: 10px 10px 0 0;
 }
 
 .aside_image {
