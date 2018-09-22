@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700');
 
 @font-face {
 	font-family: japan_heading;
@@ -15,15 +16,21 @@ body {
 	font-size: 1.25vw;
 	background-color: #fff8e7;
 }
-
+figure {
+    position: relative;
+}
 figure img {
 	width: 100%;
+    position: relative;
+	border-radius: 20px;
 }
 
 figcaption {
 	text-align: center;
-	padding: 10px 0;
+	padding: 5px 6px;
 	color: #333;
+	width: 100%;
+	border-radius: 0 0 20px 20px;
 }
 
 h1 {
@@ -66,9 +73,10 @@ ul {
 
 .rightside_image {
 	float: right;
-	width: 35%;
+	width: 30%;
 	height: auto;
-	padding: 10px 20px;
+	max-height: 30%;
+	margin: 10px 20px;
 }
 
 .brand {
@@ -166,4 +174,87 @@ ul {
 	font-size: 24px;
 	letter-spacing: 3px;
 	text-shadow: 1px 1px #999999;
+}
+
+#history body {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+#history h4,
+h5,
+h6 {
+	font-family: "Oswald", sans-serif;
+}
+
+.timeline-item {
+	padding: 3em 2em 2em;
+	margin: 0 3vw 0 11vw;
+	position: relative;
+	color: rgba(0, 0, 0, 0.7);
+	border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.timeline-item::before {
+	content: attr(date-is);
+	position: absolute;
+	left: 1em;
+	font-weight: bold;
+	top: 0.25em;
+	display: block;
+	font-family: "japan_heading", sans-serif;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+}
+
+.timeline-item::after {
+	width: 10px;
+	height: 10px;
+	display: block;
+	top: 1em;
+	position: absolute;
+	left: -6px;
+	border-radius: 10px;
+	content: "";
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	background: white;
+}
+
+.timeline-item:last-child {
+	border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.timeline-item:first-child {
+	padding: 4em 2em 2em;
+	border-image: linear-gradient(to top, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#history .timeline-item:first-child p{
+	padding-top: 20px;
+}
+
+.timeline-item:first-child::before {
+	position: absolute;
+	left: 1em;
+	top: 1.5em;
+}
+
+.timeline-item:first-child::after {
+	top: 3em;
+	position: absolute;
+	left: -6px;
+}
+
+.timeline-item figcaption{
+	color: white;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+#history p {
+	font-family: "Oswald", sans-serif;
+	font-size: 1.5rem;
+	padding:  0;
+	text-align: justify;
 }
