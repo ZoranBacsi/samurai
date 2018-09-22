@@ -127,7 +127,7 @@ ul {
 	margin-bottom: 0.5rem;
 }
 
-ol li::before {
+#list2 ol li::before {
 	content: counter(my-awesome-counter);
 	font-weight: bold;
 	font-size: 4rem;
