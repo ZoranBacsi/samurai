@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@font-face {
+    font-family: japan_heading;
+    src: url(/assets/fonts/Japan.ttf);
+}
+article {
+	text-align: justify;
+	float: left;
+	padding: 10px 25px;
+}
+
 body {
 	font-size: 1.25vw;
 	background-color: #fff8e7;
+}
+
+figure img {
+	width: 100%;
+}
+
+figcaption {
+	text-align: center;
+	padding: 10px 0;
+	color: #333;
 }
 
 h1 {
@@ -13,14 +34,8 @@ ul {
 	margin-bottom: 0;
 }
 
-figcaption {
-	text-align: center;
-	padding: 10px 0;
-	color: #333;
-}
-
 .navbar-nav {
-	padding-top: 5px;
+	padding-top: 6px;
 }
 
 .navbar-nav > li > a {
@@ -40,21 +55,18 @@ figcaption {
 	border-radius: 10px 10px 0 0;
 }
 
-.aside_image {
+.leftside_image {
 	float: left;
-	width: 30%;
-}
-
-.aside_image img {
-	width: 100%;
+	width: 35%;
 	height: auto;
+	padding: 10px 20px;
 }
 
-.aside_text {
-	text-align: justify;
-	float: left;
-	padding: 10px 25px;
-	width: 70%;
+.rightside_image {
+	float: right;
+	width: 35%;
+	height: auto;
+	padding: 10px 20px;
 }
 
 .brand {
@@ -84,4 +96,62 @@ figcaption {
 
 .navigation {
 	background-color: #222;
+}
+
+.tori li {
+	list-style-type: none;
+	line-height: 3;
+}
+
+#list2 {
+	width: 70vw;
+	margin: 3vw 5vw;
+}
+
+#list2 ol {
+	font-style: italic;
+	font-family: Georgia, Times, serif;
+	font-size: 24px;
+	color: #333;
+	list-style: none;
+	counter-reset: my-awesome-counter;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+#list2 ol li {
+	counter-increment: my-awesome-counter;
+	font-size: 0.8rem;
+	display: flex;
+	margin-bottom: 0.5rem;
+}
+
+ol li::before {
+	content: counter(my-awesome-counter);
+	font-weight: bold;
+	font-size: 4rem;
+	padding-right: 3rem;
+	font-family: 'japan_heading', serif;
+	line-height: 1;
+	width: 30px;
+    text-shadow: 1px 1px #999999;
+}
+
+#list2 ol li p {
+	padding: 10px;
+	font-style: normal;
+	font-family: Arial;
+	font-size: 13px;
+	color: #333;
+	border-left: 1px solid #999;
+}
+
+#list2 ol li p em {
+	display: block;
+	font-weight: 900;
+	font-family:'japan_heading', serif;
+	font-size: 24px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px #999999;
 }
