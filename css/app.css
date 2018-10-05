@@ -45,25 +45,19 @@ ul {
 	margin-bottom: 0;
 }
 
-.navbar-nav {
-	padding-top: 6px;
-}
-
 .navbar-nav > li > a {
 	line-height: 1.3vw;
 }
 
 .navbar-inverse .navbar-nav > li > a.active {
-	color: #333;
-	background-color: #fff8e7;
-	border-radius: 10px 10px 0 0;
+	color: #fff8e7;
+	font-weight: bold;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus,
 .navbar-inverse .navbar-nav > li > a:hover {
-	color: #333;
-	background-color: #fff8e7;
-	border-radius: 10px 10px 0 0;
+	color: #fff8e7;
+	font-weight: bold;
 }
 
 .leftside_image {
@@ -328,3 +322,13 @@ footer {
     padding-left: 15px;
 	position: relative;
 }
+
+video{
+	width: 70%;
+	margin: auto;
+}
+
+.bujutsu{
+    text-align: center;
+}
+
