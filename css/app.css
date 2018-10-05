@@ -8,7 +8,6 @@
 
 article {
 	text-align: justify;
-	float: left;
 	padding: 10px 25px;
 }
 
@@ -116,11 +115,6 @@ ul {
 .tori li {
 	list-style-type: none;
 	line-height: 3;
-}
-
-#list2 {
-	width: 70vw;
-	margin: 3vw 5vw;
 }
 
 #list2 ol {
