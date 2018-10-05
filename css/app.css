@@ -13,7 +13,7 @@ article {
 }
 
 body {
-	font-size: 1.25vw;
+	font-size: 0.75vw;
 	background-color: #fff8e7;
 }
 
@@ -256,6 +256,13 @@ h6 {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
+#movie figcaption{
+	color: white;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 #history p {
 	font-family: "Oswald", sans-serif;
 	font-size: 1.5rem;
@@ -304,5 +311,20 @@ h6 {
 footer {
 	background-color: #333;
 	color: #fff8e7;
-	margin-top: 20px
+	margin-top: 20px;
+}
+
+.m-content{
+	width: 70%;
+	float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+	position: relative;
+}
+.m-image{
+	width: 30%;
+	float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+	position: relative;
 }
