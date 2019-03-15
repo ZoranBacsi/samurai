@@ -1,4 +1,4 @@
-## ELTE Webfejlesztés - Házi feladat
+## Összefoglaló oldal a szamurájokról
 ###  samurai.github.io
 
 ### Forráslinkek:
